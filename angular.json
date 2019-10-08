@@ -2,5 +2,386 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "iBems": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/iBems",
+      "sourceRoot": "projects/iBems/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/iBems",
+            "index": "projects/iBems/src/index.html",
+            "main": "projects/iBems/src/main.ts",
+            "polyfills": "projects/iBems/src/polyfills.ts",
+            "tsConfig": "projects/iBems/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/iBems/src/assets/favicon.ico",
+              "projects/iBems/src/assets"
+            ],
+            "styles": [
+              "projects/iBems/src/assets/css/style.css",
+              "projects/iBems/src/assets/css/bootstrap.css",
+              "projects/iBems/src/assets/css/bootstrap.min.css",
+              "projects/iBems/src/assets/css/font-awesome.min.css",
+              "projects/iBems/src/assets/css/ene-main.css",
+              // "projects/iBems/src/assets/css/main.css",
+              // "projects/iBems/src/assets/css/main.min.css",
+              "projects/iBems/src/assets/css/main-new.css"
+            ],
+            "scripts": [
+              "projects/iBems/src/assets/js/jquery.min.js",
+              "projects/iBems/src/assets/js/main.js",
+              "projects/iBems/src/assets/js/bootstrap/bootstrap.min.js",
+              "projects/iBems/src/assets/js/dashboard.js",
+              "projects/iBems/src/assets/js/bootstrap/bootstrap.bundle.min.js"
+
+			]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/iBems/src/environments/environment.ts",
+                  "with": "projects/iBems/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "iBems:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "iBems:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "iBems:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/iBems/src/test.ts",
+            "polyfills": "projects/iBems/src/polyfills.ts",
+            "tsConfig": "projects/iBems/tsconfig.spec.json",
+            "karmaConfig": "projects/iBems/karma.conf.js",
+            "assets": [
+              "projects/iBems/src/assets/favicon.ico",
+              "projects/iBems/src/assets"
+            ],
+            "styles": [
+              "projects/iBems/src/style.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/iBems/tsconfig.app.json",
+              "projects/iBems/tsconfig.spec.json",
+              "projects/iBems/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/iBems/e2e/protractor.conf.js",
+            "devServerTarget": "iBems:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "iBems:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "controls": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/controls",
+      "sourceRoot": "projects/controls/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/controls",
+            "index": "projects/controls/src/index.html",
+            "main": "projects/controls/src/main.ts",
+            "polyfills": "projects/controls/src/polyfills.ts",
+            "tsConfig": "projects/controls/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/controls/src/favicon.ico",
+              "projects/controls/src/assets"
+            ],
+            "styles": [
+              "projects/iBems/src/assets/css/style.css",
+               "projects/iBems/src/assets/css/bootstrap.css",
+              "projects/iBems/src/assets/css/bootstrap.min.css",
+               "projects/iBems/src/assets/css/font-awesome.min.css",
+              "projects/iBems/src/assets/css/main.css",
+              "projects/iBems/src/assets/css/main-new.css"
+            ],
+            "scripts": [
+              "projects/iBems/src/assets/js/jquery.min.js",
+              "projects/iBems/src/assets/js/main.js",
+              "projects/iBems/src/assets/js/bootstrap/bootstrap.min.js",
+              "projects/iBems/src/assets/js/dashboard.js",
+              "projects/iBems/src/assets/js/bootstrap/bootstrap.bundle.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/controls/src/environments/environment.ts",
+                  "with": "projects/controls/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "controls:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "controls:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "controls:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/controls/src/test.ts",
+            "polyfills": "projects/controls/src/polyfills.ts",
+            "tsConfig": "projects/controls/tsconfig.spec.json",
+            "karmaConfig": "projects/controls/karma.conf.js",
+            "assets": [
+              "projects/controls/src/favicon.ico",
+              "projects/controls/src/assets"
+            ],
+            "styles": [
+              "projects/controls/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/controls/tsconfig.app.json",
+              "projects/controls/tsconfig.spec.json",
+              "projects/controls/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/controls/e2e/protractor.conf.js",
+            "devServerTarget": "controls:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "controls:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "iBemsUtils": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/iBemsUtils",
+      "sourceRoot": "projects/iBemsUtils/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/iBemsUtils",
+            "index": "projects/iBemsUtils/src/index.html",
+            "main": "projects/iBemsUtils/src/main.ts",
+            "polyfills": "projects/iBemsUtils/src/polyfills.ts",
+            "tsConfig": "projects/iBemsUtils/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/iBemsUtils/src/favicon.ico",
+              "projects/iBemsUtils/src/assets"
+            ],
+            "styles": [
+              "projects/iBemsUtils/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/iBemsUtils/src/environments/environment.ts",
+                  "with": "projects/iBemsUtils/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "iBemsUtils:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "iBemsUtils:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "iBemsUtils:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/iBemsUtils/src/test.ts",
+            "polyfills": "projects/iBemsUtils/src/polyfills.ts",
+            "tsConfig": "projects/iBemsUtils/tsconfig.spec.json",
+            "karmaConfig": "projects/iBemsUtils/karma.conf.js",
+            "assets": [
+              "projects/iBemsUtils/src/favicon.ico",
+              "projects/iBemsUtils/src/assets"
+            ],
+            "styles": [
+              "projects/iBemsUtils/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/iBemsUtils/tsconfig.app.json",
+              "projects/iBemsUtils/tsconfig.spec.json",
+              "projects/iBemsUtils/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/iBemsUtils/e2e/protractor.conf.js",
+            "devServerTarget": "iBemsUtils:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "iBemsUtils:serve:production"
+            }
+          }
+        }
+      }
+    },
+  },
+  "defaultProject": "iBems"
 }

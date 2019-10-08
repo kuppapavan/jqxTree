@@ -1,0 +1,43 @@
+<!-- <body class="hold-transition sidebar-mini"> -->
+  <style ="projects/iBems/src/assets/css/ene-main.css"></style>
+<div class="wrapper">
+  <app-ibemssidebarheader></app-ibemssidebarheader>
+  <app-ibemssidemenu></app-ibemssidemenu>
+<div class="content-wrapper">
+  <div class="content">
+    <div class="container-fluid">
+        <div class="form-group col-md-6">
+            <span for="frequency" class="control-label">Entity Message</span>
+            <div class="col-sm-12 row">
+                <app-entitytree [entityTree]="entityTreeValue"  (valueChange)='displayCounter($event)'></app-entitytree>
+              <!-- <app-entitytree [entityTree]="entityTreeValue" (valueChange)='displayCounter($event)' > </app-entitytree> -->
+
+            </div>
+          </div>
+      <router-outlet></router-outlet>
+
+  </div>
+  </div>
+</div>
+<ibems-footer></ibems-footer>
+</div>
+<script>
+  $('body').on('mouseenter mouseleave','.nav-item',function(e){
+      if ($(window).width() > 750) {
+        var _d=$(e.target).closest('.nav-item');_d.addClass('show');
+        setTimeout(function(){
+        _d[_d.is(':hover')?'addClass':'removeClass']('show');
+        },1);
+      }
+  });
+
+</script>
+<script>
+  $(function() {
+    $(".tab-act").click(function() {
+    alert("a");
+    $(this).addClass("active");
+    });
+  });
+</script>
+<!-- </body> -->

@@ -1,0 +1,42 @@
+#chartdiv,#chartdiv1,#chartdiv2 {
+    width: 100%;
+    height: 300px;
+  }
+  
+  
+  #chart-selector{
+    height: 50px;
+    margin-top: 13px;
+  }
+  #chart-selector li {
+    display: inline-block;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: .5em;
+    background: lightsteelblue;
+    cursor: pointer;
+  }
+  
+  #chart-selector1 li:hover {
+    background: #00b6f1;
+    border: 1px solid #00b6f1;
+  }
+  
+  
+  #chart-selector1{
+    height: 50px;
+    margin-top: 13px;
+  }
+  #chart-selector1 li {
+    display: inline-block;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: .5em;
+    background: lightsteelblue;
+    cursor: pointer;
+  }
+  
+  #chart-selector1 li:hover {
+    background: #00b6f1;
+    border: 1px solid #00b6f1;
+  }

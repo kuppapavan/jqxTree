@@ -1,0 +1,10 @@
+<p style="width:25%">
+<angular4-multiselect [data]="itemList" 
+                      [(ngModel)]="selectedItems" 
+                      [settings]="settings" 
+                      (onSelect)="onItemSelect($event)"
+                      (onDeSelect)="OnItemDeSelect($event)" 
+                      (onSelectAll)="onSelectAll($event)" 
+                      (onDeSelectAll)="onDeSelectAll($event)">
+</angular4-multiselect>
+</p>

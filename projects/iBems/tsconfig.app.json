@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts",
+    // "node_modules/jquery/dist/jquery.js",
+    // "node_modules/jqwidgets-scripts/jqwidgets/jqxbuttons.js",
+    // "node_modules/jqwidgets-scripts/jqwidgets/jqxcore.js",
+    // "node_modules/jqwidgets-scripts/jqwidgets/qxdropdownbutton.js",
+    // "node_modules/jqwidgets-scripts/jqwidgets/xmenu.js",
+    // "node_modules/jqwidgets-scripts/jqwidgets/jqxtree.js",
+    // "node_modules/jqwidgets-scripts/jqwidgets/jqxexpander.js"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+  ]
+}

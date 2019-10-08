@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="522.728" height="90" viewBox="0 0 522.728 90">
+  <g id="ibems_logo" transform="translate(-4.5 1.812)">
+    <g id="Group_4" data-name="Group 4" transform="translate(4.5 -1.812)">
+      <g id="Group_2" data-name="Group 2" transform="translate(100.599)">
+        <g id="Group_1" data-name="Group 1">
+          <text id="_-BEMS" data-name="-BEMS" transform="translate(33.943 73)" font-size="68" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-BEMS</tspan></text>
+          <path id="Path_1" data-name="Path 1" d="M71.684,57.8a36.4,36.4,0,0,0,7.053-4.408,3.168,3.168,0,0,1,1.587-.705c.529,0,1.234.529,1.058,1.058a.379.379,0,0,1-.353.353,31.909,31.909,0,0,1-5.642,5.29A11.087,11.087,0,0,1,67.981,61.5a4.788,4.788,0,0,1-3-1.411,5.376,5.376,0,0,1-.529-2.821c.176-4.232,1.411-8.463,2.468-12.519C69.036,37.344,70.975,29.762,71.5,22l-7.4,4.763c-.705.529-1.763,1.058-2.468.176,0,0-.176-.176,0-.176a.173.173,0,0,1,.176-.176c1.763-1.939,3.526-4.232,5.818-5.642,2.645-1.939,9.169-4.761,10.932-.176a7.839,7.839,0,0,1,.176,4.055c-.529,4.232-1.939,8.287-3,12.342a133.41,133.41,0,0,0-4.05,20.63Z" transform="translate(-61.556 17.157)"/>
+          <circle id="Ellipse_1" data-name="Ellipse 1" cx="7.053" cy="7.053" r="7.053" transform="translate(7.836 8.837)"/>
+        </g>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(0 14.303)">
+        <path id="Path_2" data-name="Path 2" d="M23.719,55.493V32.571h7.053V22.521H48.05V55.493H71.324a34.912,34.912,0,1,0-63.824,0Zm40.729-6.7c-4.055,4.232-9.169,2.821-12.342,2.116,3.35-2.468,11.284-8.816,16.045-15.34C68.151,37.861,67.974,45.09,64.448,48.793ZM56.161,38.566A34.684,34.684,0,0,0,67.622,35.04c-4.761,6.524-12.871,12.871-16.045,15.34C51.224,48.969,49.814,39.448,56.161,38.566Z" transform="translate(-4.5 -6.3)" fill="#64ff00"/>
+        <path id="Path_3" data-name="Path 3" d="M43.75,49.871V16.9H31.584V26.95H24.532V49.871H6.9a34.994,34.994,0,0,0,61.359,0Z" transform="translate(-2.668 1.79)" fill="#64ff00"/>
+      </g>
+    </g>
+    <line id="Line_1" data-name="Line 1" y2="74.23" transform="translate(374.062 10.904)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1" opacity="0.3"/>
+    <text id="Intelligent_Buildings" data-name="Intelligent
+Buildings" transform="translate(398.228 37.078)" font-size="29" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Intelligent</tspan><tspan x="0" y="34">Buildings</tspan></text>
+  </g>
+</svg>

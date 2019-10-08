@@ -22,5 +22,15 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "include": [
+	  "src/**/*"
+  ],
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts",
+    // "node_modules/jquery/dist/jquery.js",
+    "node_modules/jqwidgets-scripts/jqwidgets/jqxtree.js",
+    "node_modules/jqwidgets-scripts/jqwidgets/jqxexpander.js"
+  ]
 }
