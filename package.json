@@ -33,7 +33,7 @@
     "jquery": "^3.4.1",
     "jqwidgets-framework": "^8.2.0",
     "jqwidgets-scripts": "^8.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ng-http-loader": "^6.0.1",
     "ng-multiselect-dropdown": "^0.2.4",
     "ng2-toastr": "^4.1.2",
